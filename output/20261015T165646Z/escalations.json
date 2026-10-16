@@ -1,0 +1,32 @@
+{
+  "period": "2024-Q4",
+  "escalations": [
+    {
+      "account_code": "1150",
+      "account_name": "Other Current Assets",
+      "reason": "ambiguous_mapping",
+      "detail": "account 1150 maps to 1150 but its cf_category is 'TBD' (incomplete classification)",
+      "status": "pending",
+      "proposal": null,
+      "llm_proposal": null
+    },
+    {
+      "account_code": "2170",
+      "account_name": "Intercompany Payable",
+      "reason": "ambiguous_mapping",
+      "detail": "account 2170 maps to 2170 but its cf_category is 'TBD' (incomplete classification)",
+      "status": "pending",
+      "proposal": null,
+      "llm_proposal": null
+    },
+    {
+      "account_code": "9999",
+      "account_name": "Suspense - Unmapped",
+      "reason": "orphan_account",
+      "detail": "account 9999 is absent from the COA (strict code match); mapping is blocked until a human assigns a node or adds the account",
+      "status": "pending",
+      "proposal": null,
+      "llm_proposal": null
+    }
+  ]
+}

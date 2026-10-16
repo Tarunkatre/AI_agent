@@ -1,0 +1,33 @@
+{
+  "run_id": "20261015T165707Z",
+  "generated_at": "2026-10-15T16:57:07.430315+00:00",
+  "period": "2024-Q4",
+  "functional_currency": "USD",
+  "status": "complete",
+  "inputs": {
+    "trial_balance.csv": "6a5d38f4a7792e5a749d62ec34be8c2aa29f540ccf3c95caedf3e1f1b5203ca8",
+    "chart_of_accounts.csv": "1139711bd276b2d443ab83b9a6461b3e1f62a26416962b0dcd0e0762028e49bf",
+    "prior_period_tb.csv": "aa1439622935eadb08ec1d0911c0c2f207fd9e71d32479326f5714a4c4180595",
+    "fx_rates.csv": "268c9b9b5a14ea5533e596ed8872f1c3b5515c92a46c9b197a10ef9f909d1893",
+    "manual_adjustments.json": "26fcad0c0c7bda5306efea47e0c73238b2828b5d30afdd1bb0d54bb6a6704a0f",
+    "coa_overrides.json": "4bbd6a71b4be82fe63408f4a9bd78e2b809ccb2255419552b051ccd38cc3ec15"
+  },
+  "overlay": "/home/rishi/Desktop/Ai_agent_assignment/coa_overrides.json",
+  "config": {
+    "fuzzy_floor": 0.6,
+    "fuzzy_accept": 0.9,
+    "llm_self_min": 0.8,
+    "llm_floor_min": 0.6
+  },
+  "llm": {
+    "provider": null,
+    "model": null,
+    "degraded": true
+  },
+  "counts": {
+    "accounts": 59,
+    "mapped": 59,
+    "blocked": 0,
+    "defects": 4
+  }
+}

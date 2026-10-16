@@ -1,0 +1,57 @@
+{
+  "record_defects": [
+    {
+      "account_code": "6310",
+      "account_name": "Travel and Entertainment",
+      "type": "duplicate_row",
+      "subtype": "same_code_same_currency",
+      "detail": "account 6310 appears 2x for currency USD; rows are summed by the mapper but the balance may be double-counted",
+      "refs": {
+        "account_code": "6310",
+        "currency": "USD",
+        "rows": 2
+      }
+    }
+  ],
+  "defects": [
+    {
+      "type": "coverage",
+      "subtype": "empty_header",
+      "detail": "header 1290 'Other Assets' has no children",
+      "refs": {
+        "account_code": "1290"
+      }
+    },
+    {
+      "type": "coverage",
+      "subtype": "non_header_parent_without_row",
+      "detail": "node 3300 'Accumulated OCI' has children but no own TB row and is not typed as a Header",
+      "refs": {
+        "account_code": "3300"
+      }
+    },
+    {
+      "type": "coverage",
+      "subtype": "non_header_parent_without_row",
+      "detail": "node 8000 'Income Tax Expense' has children but no own TB row and is not typed as a Header",
+      "refs": {
+        "account_code": "8000"
+      }
+    },
+    {
+      "type": "comparables",
+      "subtype": "absent_from_coa",
+      "detail": "prior-period account 6905 'Sundry Operating Expenses' has no counterpart in the current COA",
+      "refs": {
+        "account_code": "6905",
+        "account_name": "Sundry Operating Expenses"
+      }
+    }
+  ],
+  "tb_balance_check": {
+    "debits": 71072200.0,
+    "credits": 71077000.0,
+    "imbalance": -4800.0,
+    "balanced": false
+  }
+}

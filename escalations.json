@@ -1,0 +1,17 @@
+{
+  "period": "2024-Q4",
+  "escalations": [
+    {
+      "account_code": "9999",
+      "account_name": "Suspense - Unmapped",
+      "reason": "orphan_account",
+      "detail": "assigned to 1150 Other Current Assets by controller",
+      "status": "resolved",
+      "resolution": {
+        "action": "assign_existing",
+        "target_code": "1150",
+        "resolved_by": "controller@example.com"
+      }
+    }
+  ]
+}

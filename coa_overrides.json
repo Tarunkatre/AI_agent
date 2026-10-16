@@ -1,0 +1,7 @@
+{
+  "add_account": [],
+  "set_field": [
+    {"account_code": "1150", "field": "cf_category", "value": "Operating"},
+    {"account_code": "2170", "field": "cf_category", "value": "Operating"}
+  ]
+}
